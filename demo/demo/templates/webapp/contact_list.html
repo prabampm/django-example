@@ -3,11 +3,11 @@
 <title>sample webpage</title>
 </head>
 <body>
-<h1>Contacts</h1>
+<h1>Contacts</h1>(<a href="/add">Add New </a>)
 
 <ul>
   {% for contact in object_list %}
-    <li class="contact">{{ contact }}</li>
+    <li class="contact">{{ contact }} <a href="/edit/{{contact.id}}">[edit] </a> <a href="/delete/{{contact.id}}">[delete]</a></li>
   {% endfor %}
 </ul>
 </body>
