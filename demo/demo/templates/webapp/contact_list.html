@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>sample webpage</title>
+</head>
+<body>
+<h1>Contacts</h1>
+
+<ul>
+  {% for contact in object_list %}
+    <li class="contact">{{ contact }}</li>
+  {% endfor %}
+</ul>
+</body>
+</html>
