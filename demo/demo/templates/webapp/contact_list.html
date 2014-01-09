@@ -7,7 +7,7 @@
 
 <ul>
   {% for contact in object_list %}
-    <li class="contact">{{ contact }} <a href="/edit/{{contact.id}}">[edit] </a> <a href="/delete/{{contact.id}}">[delete]</a></li>
+    <li class="contact">{{ contact }}- {{contact.email}} <a href="/edit/{{contact.id}}">[edit] </a> <a href="/delete/{{contact.id}}">[delete]</a></li>
   {% endfor %}
 </ul>
 </body>
