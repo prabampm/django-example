@@ -9,8 +9,8 @@ class AdminTest(LiveServerTestCase):
 	fixtures = ['webapp/fixtures/admin.json']
 	def setUp(self):
 		self.browser = webdriver.Firefox()
-	#def tearDown(self):
-	#	self.browser.quit()
+	def tearDown(self):
+		self.browser.quit()
 	def test_admin_site(self):
 		# user opens web browser, navigates to admin page
 		self.browser.get(self.live_server_url + '/admin/')
